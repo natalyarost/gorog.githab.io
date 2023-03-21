@@ -31,20 +31,23 @@
             </nav>
             <div class="login__button">
                 <a class="button" href="#">Войти</a>
-                <form class="form hidden">
-                    <p class="form__title">
-                        Войти на сайт
-                    </p>
-                    <p>
-                        <input class="form__login" type="text" name="login" placeholder="Логин">  
-                    </p> 
-                    <p>
-                        <input class="form__password" type="text" name="password" placeholder="Пароль">  
-                    </p>
-                    <p>
+                <div class="popup">
+                    <form class="form">
+                        <img class="close__popup" src="./img/close.png" alt="Закрыть">
+                        <p class="form__title">
+                            Войти на сайт
+                        </p>
+                        <p>
+                            <input class="form__login" type="text" name="login" placeholder="Логин">  
+                        </p> 
+                        <p>
+                            <input class="form__password" type="text" name="password" placeholder="Пароль">  
+                        </p>
+                        <p>
                         <input class="form__button" name="go" type="submit" value="Войти">
-                    </p> 
-                </form>
+                        </p> 
+                    </form>
+                </div>
             </div>
         </header>
         <main class="content">

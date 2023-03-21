@@ -1,11 +1,15 @@
 const button = document.querySelector(".button");
-const form = document.querySelector(".form");
+const popup = document.querySelector(".popup");
+const closeButton = document.querySelector(".close__popup");
 
 
-function buttonClick() {
-  button.textContent = form.classList.contains("hidden") ? `Закрыть` : `Войти`;
-
-  form.classList.toggle("hidden");
+function openPopup() {
+  popup.classList.add("popup__opend");
 }
 
-button.addEventListener("click", buttonClick);
+function closePopup() {
+  popup.classList.remove("popup__opend");
+}
+
+button.addEventListener("click", openPopup);
+closeButton.addEventListener ("click", closePopup);

@@ -110,15 +110,46 @@ nav {
     opacity: .8;
 }
 
-.form {
+.popup {
+    display: none;
+    justify-content: center;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    top: 0;
+    left: 0;
+    z-index: 5;
+}
+
+.popup__opend {
+    display: flex;
+}
+
+.close__popup {
+    right: 0;
+    width: 20px;
+    height: 20px;
     position: absolute;
-    top: 160px;
-    right: 470px;
+    padding: 8px;
+    cursor: pointer;
+    z-index: 20;
+}
+
+.close__popup:hover {
+    opacity: .8;
+}
+
+.form {
+    display: block;
+    position: relative;
+    margin-top: 160px;
     width: 500px;
     height: 418px;
     background: #FFFFFF;
     border: 1px solid #213B7E;
-    z-index: 5;
+    box-shadow: 5px 5px 4px rgba(0, 0, 0, .25);
+    z-index: 10;
 }
 
 .form__title {
@@ -174,9 +205,6 @@ nav {
     opacity: 0.8;
 }
 
-.hidden {
-    display: none;
-}
 
 .content {
     max-width: 911px;
@@ -469,7 +497,7 @@ nav {
     color: #000;
 }
 
-@media (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
     /*Версия для планшета*/
     body {
         max-width: 100%;
@@ -492,11 +520,6 @@ nav {
     .menu__link {
         font-size: 16px;
         padding: 24px 16px;
-    }
-
-    .form {
-        right: calc(50% - (1024px / 2));
-        left: calc(50% - (1024px / 2));
     }
 
     .button {
@@ -547,7 +570,7 @@ nav {
     }
 }
 
-@media (max-width: 767px) {
+@media screen and (max-width: 767px) {
     /*Версия для мобильных*/
     body {
         max-width: 100%;
@@ -575,11 +598,9 @@ nav {
     }
 
     .form {
-        right: calc(50% - (280px / 2));
-        left: calc(50% - (280px / 2));
         width: 280px;
         height: 352px;
-        top: 100px;
+        margin-top: 100px;
     }
 
     .form__login {
