@@ -45,6 +45,7 @@ img {
     width: 47px;
     height: 47px;
     margin: 16px;
+    cursor: pointer;
 }
 
 .logo:hover {
@@ -95,7 +96,7 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #EA5D21;
+    background-color: #EA5D21;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
@@ -104,10 +105,15 @@ nav {
     color: #fff;
     text-decoration: none;
     margin: 16px;
+    cursor: pointer;
 }
 
 .button:hover {
     opacity: .8;
+}
+
+.button:active {
+    background-color: #9d3103;
 }
 
 .popup {
@@ -199,10 +205,15 @@ nav {
     color: #fff;
     margin-left: 174px;
     margin-top: 56px;
+    cursor: pointer;
 }
 
 .form__button:hover {
     opacity: 0.8;
+}
+
+.form__button:active {
+    background-color: #9d3103;
 }
 
 
@@ -348,6 +359,7 @@ nav {
 .student {
     position: relative;
     width: 200px;
+    cursor: pointer;
 }
 
 .student img:hover {
